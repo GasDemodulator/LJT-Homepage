@@ -80,7 +80,7 @@ publication_category:
 teaser                   :
 breadcrumbs              : false
 words_per_minute         : 160
-future                   : true
+future                   : false
 read_more                : "disabled"
 talkmap_link             : false
 comments:
@@ -207,22 +207,14 @@ kramdown:
 
 # Collections
 collections:
+  posts:
+    output: false
   publications:
     output: true
     permalink: /:collection/:path/
 
 # Defaults
 defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
   - scope:
       path: ""
       type: pages
